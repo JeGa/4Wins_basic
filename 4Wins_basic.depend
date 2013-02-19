@@ -4,3 +4,12 @@
 
 1361303957 c:\users\jens\desktop\jens_c++_projects\4wins_basic\cell.h
 
+1361303967 source:c:\users\jens\desktop\jens_c++_projects\4wins_basic\src\data\cell.cpp
+	"Cell.h"
+
+1361304401 c:\users\jens\desktop\jens_c++_projects\4wins_basic\src\data\cell.h
+
+1361304419 source:c:\users\jens\desktop\jens_c++_projects\4wins_basic\src\application\main.cpp
+	<iostream>
+	"..\data\Cell.h"
+

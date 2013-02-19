@@ -11,7 +11,6 @@ namespace data
         public:
             Cell(char c);
             virtual ~Cell();
-        private:
             void setColor(char c);
             char getColor();
     };

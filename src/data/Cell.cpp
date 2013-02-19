@@ -1,23 +1,26 @@
 #include "Cell.h"
 
-using namespace data;
-
-Cell::Cell(char c)
-{
-    color = c;
-}
-
-Cell::~Cell()
+namespace data
 {
 
-}
+    Cell::Cell(char c)
+    {
+        color = c;
+    }
 
-void Cell::setColor(char c)
-{
-    color = c;
-}
+    Cell::~Cell()
+    {
 
-char Cell::getColor()
-{
-    return color;
+    }
+
+    void Cell::setColor(char c)
+    {
+        color = c;
+    }
+
+    char Cell::getColor()
+    {
+        return color;
+    }
+
 }
