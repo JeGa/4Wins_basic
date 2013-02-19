@@ -1,9 +1,7 @@
-#include <iostream>
-
-using namespace std;
+#include "..\data\Cell.h"
 
 int main()
 {
-    cout << "Hello world!" << endl;
+
     return 0;
 }

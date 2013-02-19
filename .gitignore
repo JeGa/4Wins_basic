@@ -11,3 +11,8 @@
 *.lai
 *.la
 *.a
+
+# c::b specific
+bin
+obj
+4Wins_basic.layout
