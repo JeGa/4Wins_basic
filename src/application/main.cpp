@@ -1,6 +1,7 @@
-#include <iostream>
+#ifdef RELEASE
 
-#include "..\data\Cell.h"
+#include <iostream>
+#include "Cell.h"
 
 using namespace std;
 
@@ -10,3 +11,5 @@ int main()
     cout << static_cast<int>(cell.getColor()) << endl;
     return 0;
 }
+
+#endif

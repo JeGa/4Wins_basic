@@ -13,3 +13,24 @@
 	<iostream>
 	"..\data\Cell.h"
 
+1361449104 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+	<iostream>
+	"Cell.h"
+
+1361447492 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
+	"Cell.h"
+
+1361449489 /home/debian/development/4Wins_basic/src/data/Cell.h
+
+1361448670 source:/home/debian/development/4Wins_basic/test/data/CellTest.cpp
+	"CellTest.h"
+	<gtest/gtest.h>
+
+1361447906 source:/home/debian/development/4Wins_basic/test/application/main.cpp
+
+1361448528 source:/home/debian/development/4Wins_basic/test/application/mainTest.cpp
+
+1361449189 /home/debian/development/4Wins_basic/test/data/CellTest.h
+	"Cell.h"
+	<gtest/gtest.h>
+

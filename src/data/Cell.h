@@ -4,6 +4,8 @@
 namespace data
 {
 
+    enum Colors {PLAYER1, PLAYER2};
+
     class Cell
     {
         private:
