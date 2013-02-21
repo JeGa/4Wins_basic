@@ -6,13 +6,13 @@ namespace data
 
     TEST_F(CellTest, testInit)
     {
-        EXPECT_EQ(1, cell.getColor());
+        EXPECT_EQ(PLAYER1, cell.getColor());
     }
 
     TEST_F(CellTest, testSetGet)
     {
-        cell.setColor(2);
-        EXPECT_EQ(2, cell.getColor());
+        cell.setColor(PLAYER2);
+        EXPECT_EQ(PLAYER2, cell.getColor());
     }
 
 }

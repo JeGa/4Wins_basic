@@ -1,19 +1,18 @@
 #ifndef CELLTEST_H
 #define CELLTEST_H
 
-#include "Cell.h"
+#include "impl/Cell.h"
 #include <gtest/gtest.h>
 
 namespace data
 {
 
-    class CellTest : public testing::Test
+    class CellTest : public ::testing::Test
     {
         protected:
             Cell cell;
 
-            CellTest() : cell(1) {}
-            virtual ~CellTest() {}
+            CellTest() : cell(PLAYER1) {}
     };
 
 }

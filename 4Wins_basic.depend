@@ -13,16 +13,18 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1361449104 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1361460058 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<iostream>
+	"ICell.h"
 	"Cell.h"
 
-1361447492 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
+1361458877 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
 	"Cell.h"
 
-1361449489 /home/debian/development/4Wins_basic/src/data/Cell.h
+1361459277 /home/debian/development/4Wins_basic/src/data/Cell.h
+	"ICell.h"
 
-1361448670 source:/home/debian/development/4Wins_basic/test/data/CellTest.cpp
+1361458945 source:/home/debian/development/4Wins_basic/test/data/CellTest.cpp
 	"CellTest.h"
 	<gtest/gtest.h>
 
@@ -30,7 +32,15 @@
 
 1361448528 source:/home/debian/development/4Wins_basic/test/application/mainTest.cpp
 
-1361449189 /home/debian/development/4Wins_basic/test/data/CellTest.h
-	"Cell.h"
+1361460083 /home/debian/development/4Wins_basic/test/data/CellTest.h
+	"impl/Cell.h"
 	<gtest/gtest.h>
+
+1361459299 /home/debian/development/4Wins_basic/src/data/ICell.h
+
+1361458877 source:/home/debian/development/4Wins_basic/src/data/impl/Cell.cpp
+	"Cell.h"
+
+1361460058 /home/debian/development/4Wins_basic/src/data/impl/Cell.h
+	"ICell.h"
 

@@ -3,22 +3,17 @@
 namespace data
 {
 
-    Cell::Cell(char c)
+    Cell::Cell(Colors c)
     {
         color = c;
     }
 
-    Cell::~Cell()
-    {
-
-    }
-
-    void Cell::setColor(char c)
+    void Cell::setColor(Colors c)
     {
         color = c;
     }
 
-    char Cell::getColor()
+    Colors Cell::getColor()
     {
         return color;
     }
