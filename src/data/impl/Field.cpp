@@ -1,23 +1,12 @@
-#include "Field.h"
-#include "Cell.h"
+#include "Field.h"s
 #include "ICell.h"
-
-#include <iostream>
 
 namespace data
 {
 
-    const int Field::DEFAULT_WIDTH;
-    const int Field::DEFAULT_HEIGHT;
-
-    Field::Field() : width(DEFAULT_WIDTH), height(DEFAULT_HEIGHT)
+    Field::Field(ICell **field, int x, int y) : field(field), width(x), height(y)
     {
-        initField(Field::DEFAULT_WIDTH, Field::DEFAULT_HEIGHT);
-    }
 
-    Field::Field(int width, int height) : width(width), height(height)
-    {
-        initField(width, height);
     }
 
     Field::~Field()
@@ -27,18 +16,6 @@ namespace data
         }
 
         delete[] field;
-    }
-
-    void Field::initField(int w, int h)
-    {
-        if (w <= 0 || h <= 0)
-            throw "Width and height must be > 0";
-
-        field = new ICell*[w];
-
-        for (int i = 0; i < w; i++) {
-            field[i] = new Cell[h];
-        }
     }
 
     bool Field::checkInField(int x, int y)

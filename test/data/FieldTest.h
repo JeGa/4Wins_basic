@@ -1,19 +1,31 @@
 #ifndef FIELDTEST_H
 #define FIELDTEST_H
 
-#include "impl/Field.h"
+#include "IField.h"
+#include "GameFactory.h"
 #include <gtest/gtest.h>
 
 namespace data
 {
 
-    class FieldTest : public ::testing::Test
+    class FieldTest : public testing::Test
     {
         protected:
-            Field field;
-            Field field_default;
+            IField *field;
+            IField *field_default;
+            //controller::GameFactory f;
 
-            FieldTest() : field(9, 10) {}
+            FieldTest()
+            {
+                //field = f.getField(9, 10);
+                //field_default = f.getDefaultField();
+            }
+
+            ~FieldTest()
+            {
+                delete field;
+                delete field_default;
+            }
     };
 
 }

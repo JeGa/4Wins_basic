@@ -44,22 +44,31 @@
 1361466939 /home/debian/development/4Wins_basic/src/data/impl/Cell.h
 	"ICell.h"
 
-1361469696 source:/home/debian/development/4Wins_basic/src/data/impl/Field.cpp
+1361481843 source:/home/debian/development/4Wins_basic/src/data/impl/Field.cpp
 	"Field.h"
-	"Cell.h"
 	"ICell.h"
-	<iostream>
 
-1361469644 /home/debian/development/4Wins_basic/src/data/impl/Field.h
+1361481390 /home/debian/development/4Wins_basic/src/data/impl/Field.h
 	"IField.h"
 	"ICell.h"
 
-1361469861 source:/home/debian/development/4Wins_basic/test/data/FieldTest.cpp
+1361483166 source:/home/debian/development/4Wins_basic/test/data/FieldTest.cpp
 	"FieldTest.h"
 	<gtest/gtest.h>
+	"GameFactory.h"
+
+1361483336 /home/debian/development/4Wins_basic/test/data/FieldTest.h
+	"IField.h"
+	"GameFactory.h"
+	<gtest/gtest.h>
+
+1361482861 source:/home/debian/development/4Wins_basic/src/controller/GameFactory.cpp
+	"GameFactory.h"
+	"ICell.h"
+	"impl/Cell.h"
 	"impl/Field.h"
 
-1361467257 /home/debian/development/4Wins_basic/test/data/FieldTest.h
-	"impl/Field.h"
-	<gtest/gtest.h>
+1361482836 /home/debian/development/4Wins_basic/src/controller/GameFactory.h
+	"ICell.h"
+	"IField.h"
 
