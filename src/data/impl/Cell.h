@@ -12,6 +12,7 @@ namespace data
             Colors color;
         public:
             Cell(Colors c);
+            Cell();
             virtual void setColor(Colors c);
             virtual Colors getColor();
     };

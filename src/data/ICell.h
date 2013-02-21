@@ -4,7 +4,7 @@
 namespace data
 {
 
-    enum Colors {PLAYER1, PLAYER2};
+    enum Colors {PLAYER1, PLAYER2, NOTSET};
 
     class ICell
     {

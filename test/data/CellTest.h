@@ -11,6 +11,7 @@ namespace data
     {
         protected:
             Cell cell;
+            Cell cell_default;
 
             CellTest() : cell(PLAYER1) {}
     };

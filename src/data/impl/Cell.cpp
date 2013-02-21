@@ -3,6 +3,11 @@
 namespace data
 {
 
+    Cell::Cell()
+    {
+        color = NOTSET;
+    }
+
     Cell::Cell(Colors c)
     {
         color = c;
