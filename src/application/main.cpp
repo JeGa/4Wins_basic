@@ -1,4 +1,4 @@
-#define RELEASE
+//#define RELEASE
 #ifdef RELEASE
 
 #include <iostream>
@@ -15,6 +15,7 @@ int main()
     cout << static_cast<int>(cell.getColor()) << endl;
 
     controller::GameFactory f;
+
     data::IField *field = f.getDefaultField();
     delete field;
 

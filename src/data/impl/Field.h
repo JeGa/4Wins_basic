@@ -10,9 +10,9 @@ namespace data
     class Field : public IField
     {
         private:
+            ICell **field;
             int width;
             int height;
-            ICell **field;
 
             bool checkInField(int x, int y);
         public:

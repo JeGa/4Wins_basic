@@ -9,6 +9,7 @@ namespace data
     class IField
     {
         public:
+            virtual ~IField() {}
             virtual void setCell(int x, int y, Colors c) = 0;
             virtual ICell *getCell(int x, int y) = 0;
             virtual int getWidth() = 0;
