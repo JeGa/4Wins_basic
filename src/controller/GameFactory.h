@@ -12,7 +12,7 @@ namespace controller
     class GameFactory
     {
         private:
-            ICell **initField(int x, int y);
+            ICell ***initField(int x, int y);
 
         public:
             static const int DEFAULT_WIDTH = 5;

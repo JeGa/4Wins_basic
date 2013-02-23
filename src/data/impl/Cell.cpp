@@ -5,7 +5,8 @@ namespace data
 
     Cell::Cell()
     {
-        color = NOTSET;
+        //!!color = NOTSET;
+        color = PLAYER2;
     }
 
     Cell::Cell(Colors c)
@@ -23,4 +24,14 @@ namespace data
         return color;
     }
 
+    std::string Cell::toString()
+    {
+        if (color == PLAYER1)
+            return "X";
+        if (color == PLAYER2)
+            return "O";
+        if (color == NOTSET)
+            return " ";
+        return "-";
+    }
 }

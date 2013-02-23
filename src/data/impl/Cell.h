@@ -15,6 +15,7 @@ namespace data
             Cell();
             virtual void setColor(Colors c);
             virtual Colors getColor();
+            virtual std::string toString();
     };
 
 }

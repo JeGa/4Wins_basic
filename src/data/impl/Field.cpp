@@ -4,7 +4,7 @@
 namespace data
 {
 
-    Field::Field(ICell **field, int x, int y) : field(field), width(x), height(y)
+    Field::Field(ICell ***cell_field, int x, int y) : cell_field(cell_field), width(x), height(y)
     {
 
     }
@@ -12,10 +12,13 @@ namespace data
     Field::~Field()
     {
         for (int i = 0; i < width; i++) {
-            delete[] field[i];
+            for (int j = 0; j< height; j++) {
+                delete cell_field[i][j];
+            }
+            delete[] cell_field[i];
         }
 
-        delete[] field;
+        delete[] cell_field;
     }
 
     bool Field::checkInField(int x, int y)
@@ -30,7 +33,7 @@ namespace data
         if (!checkInField(x, y))
             throw "Index not valid.";
 
-        field[x][y].setColor(c);
+        cell_field[x][y]->setColor(c);
     }
 
     ICell *Field::getCell(int x, int y)
@@ -38,7 +41,7 @@ namespace data
         if (!checkInField(x, y))
             throw "Index not valid.";
 
-        return &field[x][y];
+        return cell_field[x][y];
     }
 
     int Field::getWidth()
@@ -49,6 +52,20 @@ namespace data
     int Field::getHeight()
     {
         return height;
+    }
+
+    std::string Field::toString()
+    {
+        std::string str("");
+
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
+                str += cell_field[i][j]->toString();
+            }
+            str += "\n";
+        }
+
+        return str;
     }
 
 }

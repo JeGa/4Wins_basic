@@ -2,6 +2,7 @@
 #define IFIELD_H
 
 #include "ICell.h"
+#include <string>
 
 namespace data
 {
@@ -14,6 +15,7 @@ namespace data
             virtual ICell *getCell(int x, int y) = 0;
             virtual int getWidth() = 0;
             virtual int getHeight() = 0;
+            virtual std::string toString() = 0;
     };
 
 }

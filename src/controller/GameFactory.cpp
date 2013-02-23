@@ -11,20 +11,21 @@ namespace controller
     const int GameFactory::DEFAULT_WIDTH;
     const int GameFactory::DEFAULT_HEIGHT;
 
-    ICell **GameFactory::initField(int w, int h)
+    ICell ***GameFactory::initField(int w, int h)
     {
         if (w <= 0 || h <= 0)
             throw "Width and height must be > 0";
 
-        ICell **field;
-
-        field = new ICell*[w];
+        ICell ***cell_field = new ICell**[w];
 
         for (int i = 0; i < w; i++) {
-            field[i] = new Cell[h];
+            cell_field[i] = new ICell*[h];
+            for (int j = 0; j < h; j++) {
+                cell_field[i][j] = new Cell;
+            }
         }
 
-        return field;
+        return cell_field;
     }
 
     IField *GameFactory::getField(int x, int y)

@@ -1,6 +1,8 @@
 #ifndef ICELL_H
 #define ICELL_H
 
+#include <string>
+
 namespace data
 {
 
@@ -11,6 +13,7 @@ namespace data
         public:
             virtual void setColor(Colors c) = 0;
             virtual Colors getColor() = 0;
+            virtual std::string toString() = 0;
     };
 
 }
