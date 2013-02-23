@@ -58,8 +58,9 @@ namespace data
     {
         std::string str("");
 
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height; j++) {
+
+        for (int j = 0; j < height; j++) {
+            for (int i = 0; i < width; i++) {
                 str += cell_field[i][j]->toString();
             }
             str += "\n";

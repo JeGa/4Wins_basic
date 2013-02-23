@@ -5,8 +5,7 @@ namespace data
 
     Cell::Cell()
     {
-        //!!color = NOTSET;
-        color = PLAYER2;
+        color = NOTSET;
     }
 
     Cell::Cell(Colors c)

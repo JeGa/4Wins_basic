@@ -13,12 +13,8 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1361634286 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1361659646 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<iostream>
-	"impl/Cell.h"
-	"impl/Field.h"
-	"GameFactory.h"
-	"IField.h"
 	"TextUI.h"
 
 1361458877 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
@@ -41,13 +37,13 @@
 
 1361459299 /home/debian/development/4Wins_basic/src/data/ICell.h
 
-1361575481 source:/home/debian/development/4Wins_basic/src/data/impl/Cell.cpp
+1361659859 source:/home/debian/development/4Wins_basic/src/data/impl/Cell.cpp
 	"Cell.h"
 
 1361575481 /home/debian/development/4Wins_basic/src/data/impl/Cell.h
 	"ICell.h"
 
-1361633893 source:/home/debian/development/4Wins_basic/src/data/impl/Field.cpp
+1361659601 source:/home/debian/development/4Wins_basic/src/data/impl/Field.cpp
 	"Field.h"
 	"ICell.h"
 
@@ -82,14 +78,17 @@
 	"IField.h"
 	<string>
 
-1361634204 source:/home/debian/development/4Wins_basic/test/controller/GameFactoryTest.cpp
+1361659846 source:/home/debian/development/4Wins_basic/test/controller/GameFactoryTest.cpp
 	"GameFactoryTest.h"
 	<gtest/gtest.h>
 	<iostream>
-	"ICell.h"
-	"impl/Cell.h"
 
 1361576001 /home/debian/development/4Wins_basic/test/controller/GameFactoryTest.h
 	<gtest/gtest.h>
 	"GameFactory.h"
+
+1361660400 source:/home/debian/development/4Wins_basic/src/controller/LoginManager.cpp
+	"LoginManager.h"
+
+1361660399 /home/debian/development/4Wins_basic/src/controller/LoginManager.h
 

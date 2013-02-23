@@ -1,11 +1,7 @@
-#define RELEASE
+//#define RELEASE
 #ifdef RELEASE
 
 #include <iostream>
-#include "impl/Cell.h"
-#include "impl/Field.h"
-#include "GameFactory.h"
-#include "IField.h"
 #include "TextUI.h"
 
 using namespace std;

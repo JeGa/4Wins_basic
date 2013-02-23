@@ -3,9 +3,6 @@
 #include <gtest/gtest.h>
 #include <iostream>
 
-#include "ICell.h"
-#include "impl/Cell.h"
-
 namespace controller
 {
 
@@ -14,8 +11,8 @@ namespace controller
         std::string strraw("");
         std::string strfunc("");
 
-        for (int i = 0; i < field->getWidth(); i++) {
-            for (int j = 0; j < field->getHeight(); j++) {
+        for (int j = 0; j < field->getHeight(); j++) {
+            for (int i = 0; i < field->getWidth(); i++) {
                 strraw.append(field->getCell(i, j)->toString());
             }
             strraw.append("\n");
@@ -25,7 +22,7 @@ namespace controller
 
         EXPECT_STREQ(strraw.c_str(), strfunc.c_str());
 
-        std::cout << strraw << endl << strfunc;
+        std::cout << strraw << std::endl << strfunc;
     }
 
 }
