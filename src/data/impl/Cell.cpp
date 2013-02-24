@@ -1,5 +1,7 @@
 #include "Cell.h"
 
+#include <string>
+
 namespace data
 {
 
@@ -33,4 +35,5 @@ namespace data
             return " ";
         return "-";
     }
+
 }

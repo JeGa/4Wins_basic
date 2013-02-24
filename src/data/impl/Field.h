@@ -2,6 +2,7 @@
 #define FIELD_H
 
 #include "IField.h"
+#include <string>
 
 namespace data
 {
@@ -16,9 +17,10 @@ namespace data
             bool checkInField(int x, int y);
         public:
             Field(ICell ***cell_field, int x, int y);
-
             virtual ~Field();
-            virtual void setCell(int x, int y, Colors c);
+
+            virtual void setCellStatus(int x, int y, Colors c);
+            virtual Colors getCellStatus(int x, int y);
             virtual ICell *getCell(int x, int y);
             virtual int getWidth();
             virtual int getHeight();

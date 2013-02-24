@@ -11,6 +11,7 @@ namespace data
     class ICell
     {
         public:
+            virtual ~ICell() {}
             virtual void setColor(Colors c) = 0;
             virtual Colors getColor() = 0;
             virtual std::string toString() = 0;

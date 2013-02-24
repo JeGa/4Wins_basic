@@ -1,10 +1,13 @@
 #include "Field.h"
 #include "ICell.h"
 
+#include <string>
+
 namespace data
 {
 
-    Field::Field(ICell ***cell_field, int x, int y) : cell_field(cell_field), width(x), height(y)
+    Field::Field(ICell ***cell_field, int x, int y)
+        : cell_field(cell_field), width(x), height(y)
     {
 
     }
@@ -28,12 +31,20 @@ namespace data
         return false;
     }
 
-    void Field::setCell(int x, int y, Colors c)
+    void Field::setCellStatus(int x, int y, Colors c)
     {
         if (!checkInField(x, y))
             throw "Index not valid.";
 
         cell_field[x][y]->setColor(c);
+    }
+
+    Color Field::getCellStatus(int x, int y)
+    {
+        if (!checkInField(x, y))
+            throw "Index not valid.";
+
+        return cell_field[x][y]->getColor();
     }
 
     ICell *Field::getCell(int x, int y)

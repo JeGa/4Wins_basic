@@ -2,6 +2,7 @@
 #define CELL_H
 
 #include "ICell.h"
+#include <string>
 
 namespace data
 {
@@ -13,6 +14,7 @@ namespace data
         public:
             Cell(Colors c);
             Cell();
+            virtual ~ICell() {}
             virtual void setColor(Colors c);
             virtual Colors getColor();
             virtual std::string toString();
