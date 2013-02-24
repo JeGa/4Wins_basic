@@ -10,24 +10,29 @@
 #include "IField.h"
 #include <string>
 
-class Game : public IGame
+namespace data
 {
-    private:
-        IPlayer *player1;
-        IPlayer *player2;
-        IField *field;
-        IPlayer *onTurn;
-    public:
-        Game(IField *field, IPlayer *player1, IPlayer *player2, IPlayer *onTurn);
-        virtual ~Game();
-        virtual IPlayer *onTurn();
 
-        virtual void setCellStatus(int x, int y, IPlayer *player);
-        virtual IPlayer *getCellStatus(int x, int y);
+    class Game : public IGame
+    {
+        private:
+            IPlayer *player1;
+            IPlayer *player2;
+            IField *field;
+            IPlayer *turn;
+        public:
+            Game(IField *field, IPlayer *player1, IPlayer *player2, IPlayer *onTurn);
+            virtual ~Game();
+            virtual IPlayer *onTurn();
 
-        virtual IPlayer *getPlayer1();
-        virtual IPlayer *getPlayer2();
-        virtual std::string toString();
-};
+            virtual void setCellStatus(int x, int y, IPlayer *player);
+            virtual IPlayer *getCellStatus(int x, int y);
+
+            virtual IPlayer *getPlayer1();
+            virtual IPlayer *getPlayer2();
+            virtual std::string toString();
+    };
+
+}
 
 #endif // GAME_H

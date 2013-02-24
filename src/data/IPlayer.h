@@ -1,7 +1,7 @@
 #ifndef IPLAYER_H
 #define IPLAYER_H
 
-#include "IGame.h"
+//#include "IGame.h"
 #include <vector>
 #include <string>
 

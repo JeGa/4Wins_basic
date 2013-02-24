@@ -39,7 +39,7 @@ namespace data
         cell_field[x][y]->setColor(c);
     }
 
-    Color Field::getCellStatus(int x, int y)
+    Colors Field::getCellStatus(int x, int y)
     {
         if (!checkInField(x, y))
             throw "Index not valid.";

@@ -20,9 +20,8 @@ namespace controller
 
         strfunc = field->toString();
 
-        EXPECT_STREQ(strraw.c_str(), strfunc.c_str());
-
         std::cout << strraw << std::endl << strfunc;
+        EXPECT_STREQ(strraw.c_str(), strfunc.c_str());
     }
 
 }

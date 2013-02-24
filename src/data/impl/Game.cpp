@@ -7,8 +7,8 @@
 namespace data
 {
 
-    Game::Game(IField *field, IPlayer *player1, IPlayer *player2, IPlayer *onTurn)
-        : field(field), player1(player1), player2(player2), onTurn(onTurn)
+    Game::Game(IField *field, IPlayer *player1, IPlayer *player2, IPlayer *turn)
+        : field(field), player1(player1), player2(player2), turn(turn)
     {
 
     }
@@ -20,17 +20,17 @@ namespace data
 
     IPlayer *Game::onTurn()
     {
-        return onTurn;
+        return turn;
     }
 
     void Game::setCellStatus(int x, int y, IPlayer *player)
     {
         if (player == player1) {
             field->setCellStatus(x, y, PLAYER1);
-            onTurn = player2;
-        } else if (player == palyer2) {
+            turn = player2;
+        } else if (player == player2) {
             field->setCellStatus(x, y, PLAYER2);
-            onTurn = player1;
+            turn = player1;
         } else
             throw "Player doesnt play this game";
     }
@@ -55,7 +55,7 @@ namespace data
         return player2;
     }
 
-    std::string toString()
+    std::string Game::toString()
     {
         std::string str;
         //str += player1->toString();

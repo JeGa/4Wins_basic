@@ -1,16 +1,25 @@
 #include "GameTest.h"
 
+#include <gtest/gtest.h>
+
 namespace data
 {
 
-    GameTest::GameTest()
+    TEST_F(GameTest, testGetPlayer)
     {
-        //ctor
+        EXPECT_EQ(p1, game->getPlayer1());
+        EXPECT_EQ(p2, game->getPlayer2());
     }
 
-    GameTest::~GameTest()
+    TEST_F(GameTest, testGetSetCell)
     {
-        //dtor
+        game->setCellStatus(0, 0, p1);
+        EXPECT_EQ(p1, game->getCellStatus(0, 0));
+    }
+
+    TEST_F(GameTest, testOnTurn)
+    {
+        EXPECT_EQ(p1, game->onTurn());
     }
 
 }

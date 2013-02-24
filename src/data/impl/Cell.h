@@ -14,7 +14,7 @@ namespace data
         public:
             Cell(Colors c);
             Cell();
-            virtual ~ICell() {}
+            virtual ~Cell() {}
             virtual void setColor(Colors c);
             virtual Colors getColor();
             virtual std::string toString();

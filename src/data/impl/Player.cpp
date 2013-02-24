@@ -1,10 +1,15 @@
 #include "Player.h"
 
+#include <string>
+#include <sstream>
+
 namespace data
 {
+    const int Player::LOOSE;
+    const int Player::WIN;
 
     Player::Player(std::string name, std::string pw)
-        : name(name), password(pw)
+        : name(name), password(pw), wins(0), looses(0), playedGames(0), winRatio(0.0)
     {
 
     }
@@ -24,6 +29,18 @@ namespace data
 
     }*/
 
+    void Player::addGameStatistic(int result)
+    {
+        if (result == WIN) {
+            wins++;
+            playedGames++;
+        } else if (result == LOOSE) {
+            looses++;
+            playedGames++;
+        } else
+            throw "Add game statistics: Wrong argument.";
+    }
+
     int Player::getWins()
     {
         return wins;
@@ -31,7 +48,7 @@ namespace data
 
     int Player::getLooses()
     {
-        return looses:
+        return looses;
     }
 
     int Player::getPlayedGames()
@@ -41,15 +58,17 @@ namespace data
 
     double Player::getWinRatio()
     {
-        return static_cast<double>wins/playedGames;
+        return static_cast<double>(wins)/playedGames;
     }
 
     std::string Player::toString()
     {
         std::string str;
+        std::stringstream sstr;
         str += "Player: " + name + "\n";
-        str += "Wins: " + wins "\n" + "Looses: " + looses + "\n";
-        str += "Ratio: " + winRatio + "\n";
+        sstr << "Wins: " << wins << "\n" << "Looses: " << looses + "\n";
+        sstr << "Ratio: " << winRatio << "\n";
+        str += sstr.str();
 
         return str;
     }

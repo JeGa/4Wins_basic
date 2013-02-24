@@ -1,4 +1,5 @@
 #include "FieldTest.h"
+
 #include <gtest/gtest.h>
 #include "GameFactory.h"
 
@@ -15,7 +16,7 @@ namespace data
 
     TEST_F(FieldTest, testSetGet)
     {
-        field_default->setCell(0, 0, PLAYER1);
+        field_default->setCellStatus(0, 0, PLAYER1);
         /*EXPECT_EQ(PLAYER1, field->getCell(0, 0)->getColor());
 
         EXPECT_ANY_THROW(field->setCell(-1, 0, PLAYER1));

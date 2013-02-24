@@ -37,20 +37,24 @@
 
 1361459299 /home/debian/development/4Wins_basic/src/data/ICell.h
 
-1361659859 source:/home/debian/development/4Wins_basic/src/data/impl/Cell.cpp
+1361749003 source:/home/debian/development/4Wins_basic/src/data/impl/Cell.cpp
 	"Cell.h"
+	<string>
 
-1361575481 /home/debian/development/4Wins_basic/src/data/impl/Cell.h
+1361729487 /home/debian/development/4Wins_basic/src/data/impl/Cell.h
 	"ICell.h"
+	<string>
 
-1361659601 source:/home/debian/development/4Wins_basic/src/data/impl/Field.cpp
+1361729526 source:/home/debian/development/4Wins_basic/src/data/impl/Field.cpp
 	"Field.h"
 	"ICell.h"
+	<string>
 
-1361633909 /home/debian/development/4Wins_basic/src/data/impl/Field.h
+1361720157 /home/debian/development/4Wins_basic/src/data/impl/Field.h
 	"IField.h"
+	<string>
 
-1361631245 source:/home/debian/development/4Wins_basic/test/data/FieldTest.cpp
+1361748813 source:/home/debian/development/4Wins_basic/test/data/FieldTest.cpp
 	"FieldTest.h"
 	<gtest/gtest.h>
 	"GameFactory.h"
@@ -78,7 +82,7 @@
 	"IField.h"
 	<string>
 
-1361659846 source:/home/debian/development/4Wins_basic/test/controller/GameFactoryTest.cpp
+1361748969 source:/home/debian/development/4Wins_basic/test/controller/GameFactoryTest.cpp
 	"GameFactoryTest.h"
 	<gtest/gtest.h>
 	<iostream>
@@ -91,4 +95,52 @@
 	"LoginManager.h"
 
 1361660399 /home/debian/development/4Wins_basic/src/controller/LoginManager.h
+
+1361746698 source:/home/debian/development/4Wins_basic/src/controller/GameController.cpp
+	"GameController.h"
+	"IGame.h"
+
+1361746704 /home/debian/development/4Wins_basic/src/controller/GameController.h
+	"IGame.h"
+
+1361735101 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
+	"Game.h"
+	"IGame.h"
+	"IField.h"
+	<string>
+
+1361735044 /home/debian/development/4Wins_basic/src/data/impl/Game.h
+	"IGame.h"
+	"IField.h"
+	<string>
+
+1361747766 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
+	"Player.h"
+	<string>
+	<sstream>
+
+1361747271 /home/debian/development/4Wins_basic/src/data/impl/Player.h
+	"IPlayer.h"
+	<string>
+	<vector>
+
+1361748349 source:/home/debian/development/4Wins_basic/test/data/GameTest.cpp
+	"GameTest.h"
+	<gtest/gtest.h>
+
+1361748362 /home/debian/development/4Wins_basic/test/data/GameTest.h
+	"impl/Game.h"
+	"impl/Player.h"
+	"IPlayer.h"
+	"GameFactory.h"
+	<gtest/gtest.h>
+
+1361748687 source:/home/debian/development/4Wins_basic/test/data/PlayerTest.cpp
+	"PlayerTest.h"
+	"impl/Player.h"
+	<gtest/gtest.h>
+
+1361747702 /home/debian/development/4Wins_basic/test/data/PlayerTest.h
+	"impl/Player.h"
+	<gtest/gtest.h>
 
