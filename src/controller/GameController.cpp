@@ -1,11 +1,16 @@
 #include "GameController.h"
 
-GameController::GameController()
+namespace controller
 {
-    //ctor
-}
 
-GameController::~GameController()
-{
-    //dtor
+    GameController::GameController()
+    {
+        //ctor
+    }
+
+    GameController::~GameController()
+    {
+        //dtor
+    }
+
 }
