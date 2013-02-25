@@ -21,9 +21,6 @@ namespace data
             int playedGames;
             double winRatio;
         public:
-            static const int LOOSE = 0;
-            static const int WIN = 1;
-
             Player(std::string name, std::string pw);
             virtual ~Player();
             virtual std::string getName();
@@ -31,11 +28,11 @@ namespace data
             virtual std::string toString();
 
             // Player with statistics
-            void addGameStatistic(int result);
-            int getWins();
-            int getLooses();
-            int getPlayedGames();
-            double getWinRatio();
+            virtual void addGameStatistic(int result);
+            virtual int getWins();
+            virtual int getLooses();
+            virtual int getPlayedGames();
+            virtual double getWinRatio();
     };
 
 }

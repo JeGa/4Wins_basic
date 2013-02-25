@@ -16,9 +16,9 @@ namespace data
     class Game : public IGame
     {
         private:
+            IField *field;
             IPlayer *player1;
             IPlayer *player2;
-            IField *field;
             IPlayer *turn;
         public:
             Game(IField *field, IPlayer *player1, IPlayer *player2, IPlayer *onTurn);
@@ -30,6 +30,8 @@ namespace data
 
             virtual IPlayer *getPlayer1();
             virtual IPlayer *getPlayer2();
+            virtual int getWidth();
+            virtual int getHeight();
             virtual std::string toString();
     };
 

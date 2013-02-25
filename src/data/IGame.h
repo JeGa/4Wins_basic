@@ -16,6 +16,8 @@ namespace data
             virtual IPlayer *getCellStatus(int x, int y) = 0; // Wrapper for field
             virtual IPlayer *getPlayer1() = 0;
             virtual IPlayer *getPlayer2() = 0;
+            virtual int getWidth() = 0;
+            virtual int getHeight() = 0;
             virtual std::string toString() = 0;
     };
 

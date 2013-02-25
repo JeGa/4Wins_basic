@@ -13,9 +13,14 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1361659646 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1361804001 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<iostream>
 	"TextUI.h"
+	"IPlayer.h"
+	"impl/Player.h"
+	"impl/Game.h"
+	"GameControllerStandard.h"
+	"GameFactory.h"
 
 1361458877 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
 	"Cell.h"
@@ -100,26 +105,26 @@
 	"GameController.h"
 	"IGame.h"
 
-1361746704 /home/debian/development/4Wins_basic/src/controller/GameController.h
+1361790254 /home/debian/development/4Wins_basic/src/controller/GameController.h
 	"IGame.h"
 
-1361735101 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
+1361793982 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
 	"Game.h"
 	"IGame.h"
 	"IField.h"
 	<string>
 
-1361735044 /home/debian/development/4Wins_basic/src/data/impl/Game.h
+1361793947 /home/debian/development/4Wins_basic/src/data/impl/Game.h
 	"IGame.h"
 	"IField.h"
 	<string>
 
-1361747766 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
+1361803892 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
 	"Player.h"
 	<string>
 	<sstream>
 
-1361747271 /home/debian/development/4Wins_basic/src/data/impl/Player.h
+1361803726 /home/debian/development/4Wins_basic/src/data/impl/Player.h
 	"IPlayer.h"
 	<string>
 	<vector>
@@ -143,4 +148,20 @@
 1361747702 /home/debian/development/4Wins_basic/test/data/PlayerTest.h
 	"impl/Player.h"
 	<gtest/gtest.h>
+
+1361795392 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStandard.cpp
+	"GameControllerStandard.h"
+
+1361795483 /home/debian/development/4Wins_basic/src/controller/GameControllerStandard.h
+	"GameControllerStandard.h"
+	"GameControllerStrategy.h"
+
+1361797582 /home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.h
+	"IGame.h"
+	"IPlayer.h"
+
+1361803878 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.cpp
+	"GameControllerStrategy.h"
+	"IGame.h"
+	"IPlayer.h"
 

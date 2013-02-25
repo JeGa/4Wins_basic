@@ -5,8 +5,8 @@
 
 namespace data
 {
-    const int Player::LOOSE;
-    const int Player::WIN;
+    const int IPlayer::LOOSE;
+    const int IPlayer::WIN;
 
     Player::Player(std::string name, std::string pw)
         : name(name), password(pw), wins(0), looses(0), playedGames(0), winRatio(0.0)

@@ -55,11 +55,22 @@ namespace data
         return player2;
     }
 
+    int Game::getWidth()
+    {
+        return field->getWidth();
+    }
+
+    int Game::getHeight()
+    {
+        return field->getHeight();
+    }
+
     std::string Game::toString()
     {
         std::string str;
-        //str += player1->toString();
-        //str += player2->toString();
+        str += player1->toString();
+        str += player2->toString();
+        str += "OnTurn: " + turn->getName();
         str += field->toString();
         return str;
     }
