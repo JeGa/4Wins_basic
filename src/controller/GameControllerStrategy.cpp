@@ -24,8 +24,9 @@ namespace controller
 
     bool GameControllerStrategy::toggleTurn(int x, int y)
     {
+        convertCoords(&y);
+
         // Check if valid cell
-        int w = game->getWidth();
         int h = game->getHeight();
 
         // Cell not free
@@ -33,8 +34,9 @@ namespace controller
             return false;
 
         // Bottom
-        if (!(y == h-1)) {
-            if (!(game->getCellStatus(x, y+1) == NULL))
+        if (y != h-1) {
+            // Has to be over a set cell
+            if (game->getCellStatus(x, y+1) == NULL)
                 return false;
         }
 
@@ -42,7 +44,7 @@ namespace controller
         game->setCellStatus(x, y, game->onTurn());
 
         // Check if win
-        if (checkRow(game->onTurn())) {
+        if (checkRow(x, y, game->notOnTurn())) {
             if (game->onTurn() == game->getPlayer1()) {
                 // P1 Wins
                 game->getPlayer1()->addGameStatistic(data::IPlayer::WIN);
@@ -73,6 +75,16 @@ namespace controller
     data::IPlayer *GameControllerStrategy::getLastWinner()
     {
         return lastWinner;
+    }
+
+    data::IGame *GameControllerStrategy::getGame()
+    {
+        return game;
+    }
+
+    void GameControllerStrategy::convertCoords(int *y)
+    {
+        *y = game->getHeight() -1 - *y;
     }
 
 }

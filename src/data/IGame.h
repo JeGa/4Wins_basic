@@ -12,6 +12,7 @@ namespace data
         public:
             virtual ~IGame() {}
             virtual IPlayer *onTurn() = 0;
+            virtual IPlayer *notOnTurn() = 0;
             virtual void setCellStatus(int x, int y, IPlayer *player) = 0; // Wrapper for field
             virtual IPlayer *getCellStatus(int x, int y) = 0; // Wrapper for field
             virtual IPlayer *getPlayer1() = 0;

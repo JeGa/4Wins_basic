@@ -24,6 +24,7 @@ namespace data
             Game(IField *field, IPlayer *player1, IPlayer *player2, IPlayer *onTurn);
             virtual ~Game();
             virtual IPlayer *onTurn();
+            virtual IPlayer *notOnTurn();
 
             virtual void setCellStatus(int x, int y, IPlayer *player);
             virtual IPlayer *getCellStatus(int x, int y);

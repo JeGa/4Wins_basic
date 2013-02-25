@@ -32,6 +32,7 @@ namespace controller
                 gc = new GameControllerStandard;
                 p1 = new Player("p1", "p1");
                 p2 = new Player("p2", "p2");
+                std::cout << "Players from controller test: " << p1 << " " << p2 << std::endl;
                 game = new Game(f.getDefaultField(), p1, p2, p1);
             }
 

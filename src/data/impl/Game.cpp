@@ -23,6 +23,13 @@ namespace data
         return turn;
     }
 
+    IPlayer *Game::notOnTurn()
+    {
+        if (turn == player1)
+            return player1;
+        return player2;
+    }
+
     void Game::setCellStatus(int x, int y, IPlayer *player)
     {
         if (player == player1) {
