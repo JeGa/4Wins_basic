@@ -11,8 +11,8 @@ namespace controller
     {
         private:
             data::IGame *game;
-            data::IPlayer *lastWinner;
             bool running;
+            data::IPlayer *lastWinner;
 
             void endGame();
 
@@ -23,7 +23,7 @@ namespace controller
 
             void playGame(data::IGame *game);
             bool isRunning();
-            data::IPlayer *getTurn(); // From field
+            data::IPlayer *onTurn(); // From field
             bool toggleTurn(int x, int y);
             data::IPlayer *getLastWinner();
     };

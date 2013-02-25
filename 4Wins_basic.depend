@@ -108,7 +108,7 @@
 1361790254 /home/debian/development/4Wins_basic/src/controller/GameController.h
 	"IGame.h"
 
-1361793982 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
+1361806111 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
 	"Game.h"
 	"IGame.h"
 	"IField.h"
@@ -149,19 +149,35 @@
 	"impl/Player.h"
 	<gtest/gtest.h>
 
-1361795392 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStandard.cpp
+1361805157 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStandard.cpp
 	"GameControllerStandard.h"
 
 1361795483 /home/debian/development/4Wins_basic/src/controller/GameControllerStandard.h
 	"GameControllerStandard.h"
 	"GameControllerStrategy.h"
 
-1361797582 /home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.h
+1361804955 /home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.h
 	"IGame.h"
 	"IPlayer.h"
 
-1361803878 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.cpp
+1361805714 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.cpp
 	"GameControllerStrategy.h"
 	"IGame.h"
 	"IPlayer.h"
+	<iostream>
+
+1361806079 source:/home/debian/development/4Wins_basic/test/controller/GameControllerTest.cpp
+	"GameControllerTest.h"
+	<gtest/gtest.h>
+	<iostream>
+
+1361804675 /home/debian/development/4Wins_basic/test/controller/GameControllerTest.h
+	<gtest/gtest.h>
+	"GameControllerStrategy.h"
+	"GameControllerStandard.h"
+	"IPlayer.h"
+	"IGame.h"
+	"impl/Player.h"
+	"impl/Game.h"
+	"GameFactory.h"
 

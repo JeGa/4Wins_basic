@@ -32,8 +32,8 @@ namespace data
         if (color == PLAYER2)
             return "O";
         if (color == NOTSET)
-            return " ";
-        return "-";
+            return "-";
+        return "R";
     }
 
 }

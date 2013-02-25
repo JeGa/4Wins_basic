@@ -3,10 +3,12 @@
 #include "IGame.h"
 #include "IPlayer.h"
 
+#include <iostream>
+
 namespace controller
 {
 
-    GameControllerStrategy::GameControllerStrategy() : running(true) {}
+    GameControllerStrategy::GameControllerStrategy() : running(true), lastWinner(NULL) {}
 
     GameControllerStrategy::~GameControllerStrategy() {}
 
@@ -30,9 +32,11 @@ namespace controller
         if (game->getCellStatus(x, y) != NULL)
             return false;
 
-        // Bottom, above other cell
-        if (!(y == h-1 || game->getCellStatus(x, y+1) != NULL))
-            return false;
+        // Bottom
+        if (!(y == h-1)) {
+            if (!(game->getCellStatus(x, y+1) == NULL))
+                return false;
+        }
 
         // Set cell
         game->setCellStatus(x, y, game->onTurn());
@@ -56,7 +60,7 @@ namespace controller
         return true;
     }
 
-    data::IPlayer *GameControllerStrategy::getTurn()
+    data::IPlayer *GameControllerStrategy::onTurn()
     {
         return game->onTurn();
     }
