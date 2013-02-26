@@ -13,14 +13,9 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1361804001 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1361907424 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<iostream>
 	"TextUI.h"
-	"IPlayer.h"
-	"impl/Player.h"
-	"impl/Game.h"
-	"GameControllerStandard.h"
-	"GameFactory.h"
 
 1361458877 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
 	"Cell.h"
@@ -69,22 +64,41 @@
 	"GameFactory.h"
 	<gtest/gtest.h>
 
-1361634139 source:/home/debian/development/4Wins_basic/src/controller/GameFactory.cpp
+1361907005 source:/home/debian/development/4Wins_basic/src/controller/GameFactory.cpp
 	"GameFactory.h"
 	"ICell.h"
 	"impl/Cell.h"
+	"IField.h"
 	"impl/Field.h"
+	"GameControllerStrategy.h"
+	"GameControllerStandard.h"
+	"IGame.h"
+	"impl/Game.h"
+	"IPlayer.h"
+	"impl/Player.h"
+	<string>
 
-1361634249 /home/debian/development/4Wins_basic/src/controller/GameFactory.h
+1361906961 /home/debian/development/4Wins_basic/src/controller/GameFactory.h
 	"ICell.h"
 	"IField.h"
+	"IGame.h"
+	"IPlayer.h"
+	"GameControllerStrategy.h"
+	<string>
 
-1361575393 source:/home/debian/development/4Wins_basic/src/view/TextUI.cpp
+1361907681 source:/home/debian/development/4Wins_basic/src/view/TextUI.cpp
 	"TextUI.h"
-
-1361574721 /home/debian/development/4Wins_basic/src/view/TextUI.h
 	"GameFactory.h"
-	"IField.h"
+	"IGame.h"
+	"GameControllerStrategy.h"
+	<string>
+	<iostream>
+
+1361907722 /home/debian/development/4Wins_basic/src/view/TextUI.h
+	"IPlayer.h"
+	"GameFactory.h"
+	"IGame.h"
+	"GameControllerStrategy.h"
 	<string>
 
 1361748969 source:/home/debian/development/4Wins_basic/test/controller/GameFactoryTest.cpp
@@ -108,7 +122,7 @@
 1361790254 /home/debian/development/4Wins_basic/src/controller/GameController.h
 	"IGame.h"
 
-1361901115 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
+1361906019 source:/home/debian/development/4Wins_basic/src/data/impl/Game.cpp
 	"Game.h"
 	"IGame.h"
 	"IField.h"
@@ -119,7 +133,7 @@
 	"IField.h"
 	<string>
 
-1361803892 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
+1361906397 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
 	"Player.h"
 	<string>
 	<sstream>
@@ -133,7 +147,7 @@
 	"GameTest.h"
 	<gtest/gtest.h>
 
-1361899669 /home/debian/development/4Wins_basic/test/data/GameTest.h
+1361904697 /home/debian/development/4Wins_basic/test/data/GameTest.h
 	"impl/Game.h"
 	"impl/Player.h"
 	"IPlayer.h"

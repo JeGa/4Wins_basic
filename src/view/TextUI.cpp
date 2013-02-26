@@ -1,39 +1,55 @@
 #include "TextUI.h"
 
+#include "GameFactory.h"
+#include "IGame.h"
+#include "GameControllerStrategy.h"
+#include <string>
+#include <iostream>
+
 namespace view
 {
 
     using namespace controller;
     using namespace data;
+    using namespace std;
 
-    TextUI::TextUI()
+    TextUI::TextUI() : p1 (factory.getPlayer("Han Solo", "Falcon")), p2(factory.getPlayer("R2D2", "C3PO")),
+        gc(factory.getGameController()), game(factory.getGame(10, 5, p1, p2, p1))
     {
-        /* Controller needs:
-            - IField
-            -
-        From Factory!
+        gc->playGame(game);
 
-        Simplest way is getController method.
-        */
-
-        factory = new GameFactory;
-        field = factory->getDefaultField();
+        cout << "#### START GAME ####" << endl;
     }
 
     TextUI::~TextUI()
     {
-        delete factory;
-        delete field;
+        if (gc->isRunning())
+            delete game;
+
+        delete gc;
+
+        delete p1;
+        delete p2;
     }
 
-    void TextUI::getInput()
+    bool TextUI::setInput(int x, int y)
     {
+        cout << gc->onTurn()->getName() << " is on turn!" << endl;
+        gc->toggleTurn(x, y);
 
+        if (!gc->isRunning()) {
+            cout << "---- Game ends ----" << endl;
+            cout << "WINNER IS:" << endl;
+            cout << gc->getLastWinner()->toString() << endl;
+            return false;
+        }
+
+        return true;
     }
 
     std::string TextUI::toString()
     {
-        return field->toString();
+        return game->toString();
     }
 
 }

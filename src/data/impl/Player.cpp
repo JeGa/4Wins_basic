@@ -39,6 +39,8 @@ namespace data
             playedGames++;
         } else
             throw "Add game statistics: Wrong argument.";
+
+        winRatio = getWinRatio();
     }
 
     int Player::getWins()
@@ -65,9 +67,9 @@ namespace data
     {
         std::string str;
         std::stringstream sstr;
-        str += "Player: " + name + "\n";
-        sstr << "Wins: " << wins << "\n" << "Looses: " << looses << "\n";
-        sstr << "Ratio: " << winRatio << "\n";
+        str += "Player: " + name + '\n';
+        sstr << "Wins: " << wins << '\n' << "Looses: " << looses << '\n';
+        sstr << "Ratio: " << winRatio << '\n';
         str += sstr.str();
 
         return str;

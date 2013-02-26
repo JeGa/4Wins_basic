@@ -1,23 +1,33 @@
 #ifndef TEXTUI_H
 #define TEXTUI_H
 
+#include "IPlayer.h"
 #include "GameFactory.h"
-#include "IField.h"
+#include "IGame.h"
+#include "GameControllerStrategy.h"
 #include <string>
 
 namespace view
 {
 
+    using namespace controller;
+    using namespace data;
+    using namespace std;
+
     class TextUI
     {
         private:
-            controller::GameFactory *factory;
-            data::IField *field;
+            controller::GameFactory factory;
+
+            IPlayer *p1;
+            IPlayer *p2;
+            GameControllerStrategy *gc;
+            IGame *game;
         public:
             TextUI();
             ~TextUI();
-            void getInput();
-            std::string toString();
+            bool setInput(int x, int y);
+            string toString();
     };
 
 }

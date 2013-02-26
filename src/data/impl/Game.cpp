@@ -77,7 +77,7 @@ namespace data
         std::string str;
         str += player1->toString();
         str += player2->toString();
-        str += "OnTurn: " + turn->getName() + "\n\n";
+        str += "OnTurn: " + turn->getName() + '\n';
         str += field->toString();
         return str;
     }

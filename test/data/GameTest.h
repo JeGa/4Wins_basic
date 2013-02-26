@@ -30,6 +30,7 @@ namespace data
             {
                 delete p1;
                 delete p2;
+                delete game;
             }
     };
 
