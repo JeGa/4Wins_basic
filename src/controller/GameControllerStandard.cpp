@@ -18,8 +18,6 @@ namespace controller
         if (down(x, y, p) >= 4)
             return true;
 
-        //std::cout << "down with: " << x << y<< down(x, y, p) << " <- down" << std::endl;
-
         return false;
     }
 
@@ -33,7 +31,8 @@ namespace controller
         int sum = 0;
 
         sum = countCells(x, y, p, -1, 0);
-        sum += countCells(x, y, p, +1, 0);
+        sum += countCells(x+1, y, p, +1, 0);
+        // (dont count double)
 
         return sum;
     }
@@ -64,15 +63,16 @@ namespace controller
     {
         int sum = 0;
 
-        std::cout << inField(x, y) << " " << getGame()->getCellStatus(x, y) << " player: "<< p <<std::endl;
+        //std::cout << "Size::: " << getGame()->getWidth() << " " << getGame()->getHeight() << std::endl;
+        //std::cout << "## countCells: " << x << " " << y << " with direction: " << xDirection << " " << yDirection << std::endl;
+        //std::cout << "## In field: " << inField(x, y) << " cell status: " << getGame()->getCellStatus(x, y) << " player: "<< p <<std::endl;
 
         while (inField(x, y) && (getGame()->getCellStatus(x, y) == p)) {
             sum++;
 
-            std::cout << "countCells: " << x << " " << y << sum << std::endl;
-
             x += xDirection;
             y += yDirection;
+            //std::cout << "-> countCellsLoop: " << x << " " << y << " sum: " << sum << std::endl;
         }
 
         return sum;
@@ -80,7 +80,7 @@ namespace controller
 
     bool GameControllerStandard::inField(int x, int y)
     {
-        if (x >= 0 && x <= getGame()->getWidth() && y >= 0 && y <= getGame()->getHeight())
+        if (x >= 0 && x < getGame()->getWidth() && y >= 0 && y < getGame()->getHeight())
             return true;
         return false;
     }

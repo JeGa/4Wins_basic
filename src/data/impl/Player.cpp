@@ -66,7 +66,7 @@ namespace data
         std::string str;
         std::stringstream sstr;
         str += "Player: " + name + "\n";
-        sstr << "Wins: " << wins << "\n" << "Looses: " << looses + "\n";
+        sstr << "Wins: " << wins << "\n" << "Looses: " << looses << "\n";
         sstr << "Ratio: " << winRatio << "\n";
         str += sstr.str();
 

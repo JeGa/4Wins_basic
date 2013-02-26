@@ -20,6 +20,7 @@ namespace controller
     void GameControllerStrategy::playGame(data::IGame *game)
     {
         this->game = game;
+        running = true;
     }
 
     bool GameControllerStrategy::toggleTurn(int x, int y)
@@ -40,12 +41,12 @@ namespace controller
                 return false;
         }
 
-        // Set cell
+        // Set cell (changes onTurn!!)
         game->setCellStatus(x, y, game->onTurn());
 
-        // Check if win
+        // Check if win (because of the last set cell, so last turn player is needed)
         if (checkRow(x, y, game->notOnTurn())) {
-            if (game->onTurn() == game->getPlayer1()) {
+            if (game->notOnTurn() == game->getPlayer1()) {
                 // P1 Wins
                 game->getPlayer1()->addGameStatistic(data::IPlayer::WIN);
                 game->getPlayer2()->addGameStatistic(data::IPlayer::LOOSE);
@@ -56,9 +57,11 @@ namespace controller
                 game->getPlayer1()->addGameStatistic(data::IPlayer::LOOSE);
                 lastWinner = game->getPlayer2();
             }
+
             endGame();
             running = false;
         }
+
         return true;
     }
 

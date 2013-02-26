@@ -26,8 +26,8 @@ namespace data
     IPlayer *Game::notOnTurn()
     {
         if (turn == player1)
-            return player1;
-        return player2;
+            return player2;
+        return player1;
     }
 
     void Game::setCellStatus(int x, int y, IPlayer *player)

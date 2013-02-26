@@ -22,6 +22,7 @@ namespace controller
 
         // 4 left up
         EXPECT_TRUE(gc->toggleTurn(0, 0)); // 1 p1
+        EXPECT_EQ(p2, gc->onTurn());
         EXPECT_TRUE(gc->toggleTurn(1, 0));
         EXPECT_TRUE(gc->toggleTurn(0, 1)); // 2 p1
         EXPECT_TRUE(gc->toggleTurn(2, 0));
@@ -29,10 +30,10 @@ namespace controller
         EXPECT_TRUE(gc->toggleTurn(3, 0));
         EXPECT_TRUE(gc->toggleTurn(0, 3)); // 4 p1
 
-        EXPECT_EQ(p2, gc->onTurn());
         EXPECT_FALSE(gc->isRunning());
         EXPECT_EQ(p1, gc->getLastWinner());
     }
+
 
     TEST_F(GameControllerTest, testAlgorithmFailure)
     {
@@ -41,7 +42,7 @@ namespace controller
         EXPECT_TRUE(gc->toggleTurn(0, 0));
         EXPECT_FALSE(gc->toggleTurn(0, 0));
 
-         EXPECT_FALSE(gc->toggleTurn(0, 4));
+        EXPECT_FALSE(gc->toggleTurn(0, 4));
     }
 
     TEST_F(GameControllerTest, testSetCells)
