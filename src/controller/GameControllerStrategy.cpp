@@ -8,7 +8,7 @@
 namespace controller
 {
 
-    GameControllerStrategy::GameControllerStrategy() : running(true), lastWinner(NULL) {}
+    GameControllerStrategy::GameControllerStrategy() : running(false), lastWinner(NULL) {}
 
     GameControllerStrategy::~GameControllerStrategy() {}
 
@@ -85,6 +85,10 @@ namespace controller
         return game;
     }
 
+    /*
+    * Converts the coordinates to the real coordinates for the array.
+    * (real begins with 0,0 from top-left, easier is from bottom-left)
+    */
     void GameControllerStrategy::convertCoords(int *y)
     {
         *y = game->getHeight() -1 - *y;

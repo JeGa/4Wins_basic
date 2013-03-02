@@ -1,11 +1,16 @@
 #include "LoginManager.h"
 
-LoginManager::LoginManager()
+namespace controller
 {
-    //ctor
-}
 
-LoginManager::~LoginManager()
-{
-    //dtor
+    LoginManager::LoginManager()
+    {
+        //ctor
+    }
+
+    LoginManager::~LoginManager()
+    {
+        //dtor
+    }
+
 }

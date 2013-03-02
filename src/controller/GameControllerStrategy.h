@@ -14,7 +14,6 @@
 * -> getLastWinner()
 */
 
-
 #ifndef GAMECONTROLLERSTRATEGY_H
 #define GAMECONTROLLERSTRATEGY_H
 
@@ -28,12 +27,12 @@ namespace controller
     {
         private:
             data::IGame *game;
-            bool running;
+            bool running; // Actual game is running?
             data::IPlayer *lastWinner;
 
             void endGame();
             void convertCoords(int *y);
-
+            // Strategy method to override
             virtual bool checkRow(int x, int y, data::IPlayer *p) = 0;
         public:
             GameControllerStrategy();
@@ -42,7 +41,7 @@ namespace controller
             void playGame(data::IGame *game);
             bool isRunning();
             data::IPlayer *onTurn(); // From field
-            bool toggleTurn(int x, int y);
+            bool toggleTurn(int x, int y); // Switches between the 2 players
 
             data::IPlayer *getLastWinner();
             data::IGame *getGame();

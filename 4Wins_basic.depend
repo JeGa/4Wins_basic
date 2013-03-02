@@ -13,9 +13,10 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1361907424 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1362222253 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<iostream>
 	"TextUI.h"
+	"GraphicalUI.h"
 
 1361458877 source:/home/debian/development/4Wins_basic/src/data/Cell.cpp
 	"Cell.h"
@@ -86,7 +87,7 @@
 	"GameControllerStrategy.h"
 	<string>
 
-1361907681 source:/home/debian/development/4Wins_basic/src/view/TextUI.cpp
+1362220620 source:/home/debian/development/4Wins_basic/src/view/TextUI.cpp
 	"TextUI.h"
 	"GameFactory.h"
 	"IGame.h"
@@ -94,7 +95,7 @@
 	<string>
 	<iostream>
 
-1361907722 /home/debian/development/4Wins_basic/src/view/TextUI.h
+1362220580 /home/debian/development/4Wins_basic/src/view/TextUI.h
 	"IPlayer.h"
 	"GameFactory.h"
 	"IGame.h"
@@ -110,10 +111,10 @@
 	<gtest/gtest.h>
 	"GameFactory.h"
 
-1361660400 source:/home/debian/development/4Wins_basic/src/controller/LoginManager.cpp
+1362220640 source:/home/debian/development/4Wins_basic/src/controller/LoginManager.cpp
 	"LoginManager.h"
 
-1361660399 /home/debian/development/4Wins_basic/src/controller/LoginManager.h
+1362220492 /home/debian/development/4Wins_basic/src/controller/LoginManager.h
 
 1361746698 source:/home/debian/development/4Wins_basic/src/controller/GameController.cpp
 	"GameController.h"
@@ -171,11 +172,11 @@
 	"GameControllerStandard.h"
 	"GameControllerStrategy.h"
 
-1361821155 /home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.h
+1362218242 /home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.h
 	"IGame.h"
 	"IPlayer.h"
 
-1361903035 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.cpp
+1361986520 source:/home/debian/development/4Wins_basic/src/controller/GameControllerStrategy.cpp
 	"GameControllerStrategy.h"
 	"IGame.h"
 	"IPlayer.h"
@@ -195,4 +196,15 @@
 	"impl/Player.h"
 	"impl/Game.h"
 	"GameFactory.h"
+
+1362222275 source:/home/debian/development/4Wins_basic/src/view/GraphicalUI.cpp
+	"GraphicalUI.h"
+	<FL/Fl.H>
+	<FL/Fl_Window.H>
+	<FL/Fl_Box.H>
+
+1362222127 /home/debian/development/4Wins_basic/src/view/GraphicalUI.h
+	<FL/Fl.H>
+	<FL/Fl_Window.H>
+	<FL/Fl_Box.H>
 

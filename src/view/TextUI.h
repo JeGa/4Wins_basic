@@ -9,7 +9,6 @@
 
 namespace view
 {
-
     using namespace controller;
     using namespace data;
     using namespace std;
@@ -26,6 +25,7 @@ namespace view
         public:
             TextUI();
             ~TextUI();
+
             bool setInput(int x, int y);
             string toString();
     };

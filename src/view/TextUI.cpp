@@ -19,6 +19,7 @@ namespace view
         gc->playGame(game);
 
         cout << "#### START GAME ####" << endl;
+        cout << gc->onTurn()->getName() << " is on turn!" << endl;
     }
 
     TextUI::~TextUI()
@@ -34,7 +35,6 @@ namespace view
 
     bool TextUI::setInput(int x, int y)
     {
-        cout << gc->onTurn()->getName() << " is on turn!" << endl;
         gc->toggleTurn(x, y);
 
         if (!gc->isRunning()) {
@@ -44,6 +44,7 @@ namespace view
             return false;
         }
 
+        cout << gc->onTurn()->getName() << " is on turn!" << endl;
         return true;
     }
 

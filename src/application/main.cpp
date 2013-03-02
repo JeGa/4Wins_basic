@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "TextUI.h"
+#include "GraphicalUI.h"
 
 using namespace std;
 using namespace controller;
@@ -11,6 +12,7 @@ using namespace data;
 int main()
 {
     view::TextUI tui;
+    view::GraphicalUI gui;
     int x, y;
 
     do {
