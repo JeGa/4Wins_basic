@@ -2,6 +2,7 @@
 
 #include <string>
 #include <sstream>
+#include <fstream>
 
 namespace data
 {
@@ -22,6 +23,18 @@ namespace data
     std::string Player::getName()
     {
         return name;
+    }
+
+    void Player::writeToDisk()
+    {
+        std::ofstream out((name + ".player").c_str(), std::ios::binary);
+
+        if (!out)
+            throw "Could not open output filestream.";
+
+        out << toString();
+
+        out.close(); // Flush buffer
     }
 
     /*bool Player::verifypassword(std::string pw)

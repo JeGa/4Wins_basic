@@ -13,7 +13,7 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1362222253 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1362236365 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<iostream>
 	"TextUI.h"
 	"GraphicalUI.h"
@@ -87,7 +87,7 @@
 	"GameControllerStrategy.h"
 	<string>
 
-1362220620 source:/home/debian/development/4Wins_basic/src/view/TextUI.cpp
+1362232203 source:/home/debian/development/4Wins_basic/src/view/TextUI.cpp
 	"TextUI.h"
 	"GameFactory.h"
 	"IGame.h"
@@ -95,11 +95,12 @@
 	<string>
 	<iostream>
 
-1362220580 /home/debian/development/4Wins_basic/src/view/TextUI.h
+1362230140 /home/debian/development/4Wins_basic/src/view/TextUI.h
 	"IPlayer.h"
 	"GameFactory.h"
 	"IGame.h"
 	"GameControllerStrategy.h"
+	"LoginManager.h"
 	<string>
 
 1361748969 source:/home/debian/development/4Wins_basic/test/controller/GameFactoryTest.cpp
@@ -114,7 +115,10 @@
 1362220640 source:/home/debian/development/4Wins_basic/src/controller/LoginManager.cpp
 	"LoginManager.h"
 
-1362220492 /home/debian/development/4Wins_basic/src/controller/LoginManager.h
+1362231256 /home/debian/development/4Wins_basic/src/controller/LoginManager.h
+	"IPlayer.h"
+	"IGame.h"
+	<vector>
 
 1361746698 source:/home/debian/development/4Wins_basic/src/controller/GameController.cpp
 	"GameController.h"
@@ -134,12 +138,13 @@
 	"IField.h"
 	<string>
 
-1361906397 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
+1362237446 source:/home/debian/development/4Wins_basic/src/data/impl/Player.cpp
 	"Player.h"
 	<string>
 	<sstream>
+	<fstream>
 
-1361803726 /home/debian/development/4Wins_basic/src/data/impl/Player.h
+1362236356 /home/debian/development/4Wins_basic/src/data/impl/Player.h
 	"IPlayer.h"
 	<string>
 	<vector>
@@ -155,10 +160,11 @@
 	"GameFactory.h"
 	<gtest/gtest.h>
 
-1361748687 source:/home/debian/development/4Wins_basic/test/data/PlayerTest.cpp
+1362237429 source:/home/debian/development/4Wins_basic/test/data/PlayerTest.cpp
 	"PlayerTest.h"
 	"impl/Player.h"
 	<gtest/gtest.h>
+	<fstream>
 
 1361747702 /home/debian/development/4Wins_basic/test/data/PlayerTest.h
 	"impl/Player.h"

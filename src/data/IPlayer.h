@@ -15,7 +15,7 @@ namespace data
             static const int WIN = 1;
 
             virtual ~IPlayer() {}
-            //virtual void writeToFile() = 0;
+            virtual void writeToDisk() = 0;
             //virtual std::vector<IGame> getGames() = 0;
             virtual std::string getName() = 0;
             //virtual bool verifypassword(std::string pw) = 0;

@@ -1,4 +1,4 @@
-#define RELEASE
+//#define RELEASE
 #ifdef RELEASE
 
 #include <iostream>
@@ -12,12 +12,12 @@ using namespace data;
 int main()
 {
     view::TextUI tui;
-    view::GraphicalUI gui;
+    //view::GraphicalUI gui;
     int x, y;
 
-    do {
-        cout << tui.toString();
+    tui.menu();
 
+    do {
         cout << "Give x and y coordinates to set cell:" << endl;
         cin >> x;
         cin >> y;

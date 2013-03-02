@@ -5,6 +5,7 @@
 #include "GameFactory.h"
 #include "IGame.h"
 #include "GameControllerStrategy.h"
+#include "LoginManager.h"
 #include <string>
 
 namespace view
@@ -16,17 +17,24 @@ namespace view
     class TextUI
     {
         private:
-            controller::GameFactory factory;
+            GameFactory factory;
+            LoginManager login;
 
+            // Local players
             IPlayer *p1;
             IPlayer *p2;
+
             GameControllerStrategy *gc;
             IGame *game;
+
+            void startLocalGame();
+            //startNetworkGame();
         public:
             TextUI();
             ~TextUI();
 
-            bool setInput(int x, int y);
+            void menu();
+            bool setInput(int x, int y); // Call from game loop
             string toString();
     };
 
