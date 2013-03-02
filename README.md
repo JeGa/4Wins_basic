@@ -3,8 +3,13 @@
 
 ## Introduction
 4Wins_basic is a very basic 4 wins program written in C++.
-For unittests, **Google C++ Testing Framework** is used. As IDE I used **Code::Blocks**.
-It is developed under Debian Linux. As architecture the MVC-structure is used. 
+
+Following tools are used:
+* Unittests: **Google C++ Testing Framework**
+* GUI: **FLTK** (portability and leightweight)
+* IDE: **Code::Blocks**.
+* 
+It is developed under Debian Linux. As architecture the MVC-structure is used.
 
 ## Development
 
