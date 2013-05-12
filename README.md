@@ -3,8 +3,13 @@
 
 ## Introduction
 4Wins_basic is a very basic 4 wins program written in C++.
-For unittests, **Google C++ Testing Framework** is used. As IDE I used **Code::Blocks**.
-It is developed under Debian Linux. As architecture the MVC-structure is used. 
+
+Following tools are used:
+* Unittests: **Google C++ Testing Framework**
+* GUI: **FLTK** (portability and leightweight)
+* IDE: **Code::Blocks**.
+* 
+It is developed under Debian Linux. As architecture the MVC-structure is used.
 
 ## Development
 
@@ -57,3 +62,9 @@ int GameControllerStandard::countCells(int x, int y, data::IPlayer *p, int xDire
 * Better 4wins algorithm (to give a win-chance): Holding all possible rows in lists.
 * GUI
 * Network
+
+## Installation
+
+At the moment, there are no binaries available. To compile it, you have to link it with fltk.
+To run the unittest you need the gtest framework. All tools used are cross-platform, so it should work under
+Windows, too (but not tested yet, maybe you need to set some flags e.g. remove pthread support).
