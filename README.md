@@ -11,6 +11,11 @@ Following tools are used:
 * 
 It is developed under Debian Linux. As architecture the MVC-structure is used.
 
+## Note
+This repository only contains the 2-player-local TUI version. GUI and network support
+are not implemented. The further development is done in a different development environment
+on a different repository.
+
 ## Development
 
 ### Architecture details
