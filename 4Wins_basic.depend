@@ -13,7 +13,8 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1362236365 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1362313686 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+	<string>
 	<iostream>
 	"TextUI.h"
 	"GraphicalUI.h"
@@ -160,7 +161,7 @@
 	"GameFactory.h"
 	<gtest/gtest.h>
 
-1362237429 source:/home/debian/development/4Wins_basic/test/data/PlayerTest.cpp
+1362238343 source:/home/debian/development/4Wins_basic/test/data/PlayerTest.cpp
 	"PlayerTest.h"
 	"impl/Player.h"
 	<gtest/gtest.h>
@@ -188,7 +189,7 @@
 	"IPlayer.h"
 	<iostream>
 
-1361903217 source:/home/debian/development/4Wins_basic/test/controller/GameControllerTest.cpp
+1362239108 source:/home/debian/development/4Wins_basic/test/controller/GameControllerTest.cpp
 	"GameControllerTest.h"
 	<gtest/gtest.h>
 	<iostream>
@@ -203,14 +204,15 @@
 	"impl/Game.h"
 	"GameFactory.h"
 
-1362222275 source:/home/debian/development/4Wins_basic/src/view/GraphicalUI.cpp
+1362312295 source:/home/debian/development/4Wins_basic/src/view/GraphicalUI.cpp
 	"GraphicalUI.h"
 	<FL/Fl.H>
 	<FL/Fl_Window.H>
 	<FL/Fl_Box.H>
 
-1362222127 /home/debian/development/4Wins_basic/src/view/GraphicalUI.h
+1362312264 /home/debian/development/4Wins_basic/src/view/GraphicalUI.h
 	<FL/Fl.H>
 	<FL/Fl_Window.H>
-	<FL/Fl_Box.H>
+	<FL/Fl_Button.H>
+	<FL/Fl_Menu_Bar.H>
 

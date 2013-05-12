@@ -33,11 +33,43 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="src/application/main.cpp" />
-		<Unit filename="src/data/Cell.cpp" />
-		<Unit filename="src/data/Cell.h" />
-		<Unit filename="test/application/main.cpp" />
+		<Unit filename="src/controller/GameControllerStandard.cpp" />
+		<Unit filename="src/controller/GameControllerStandard.h" />
+		<Unit filename="src/controller/GameControllerStrategy.cpp" />
+		<Unit filename="src/controller/GameControllerStrategy.h" />
+		<Unit filename="src/controller/GameFactory.cpp" />
+		<Unit filename="src/controller/GameFactory.h" />
+		<Unit filename="src/controller/LoginManager.cpp" />
+		<Unit filename="src/controller/LoginManager.h" />
+		<Unit filename="src/data/ICell.h" />
+		<Unit filename="src/data/IField.h" />
+		<Unit filename="src/data/IGame.h" />
+		<Unit filename="src/data/IPlayer.h" />
+		<Unit filename="src/data/impl/Cell.cpp" />
+		<Unit filename="src/data/impl/Cell.h" />
+		<Unit filename="src/data/impl/Field.cpp" />
+		<Unit filename="src/data/impl/Field.h" />
+		<Unit filename="src/data/impl/Game.cpp" />
+		<Unit filename="src/data/impl/Game.h" />
+		<Unit filename="src/data/impl/Player.cpp" />
+		<Unit filename="src/data/impl/Player.h" />
+		<Unit filename="src/view/GraphicalUI.cpp" />
+		<Unit filename="src/view/GraphicalUI.h" />
+		<Unit filename="src/view/TextUI.cpp" />
+		<Unit filename="src/view/TextUI.h" />
+		<Unit filename="test/application/mainTest.cpp" />
+		<Unit filename="test/controller/GameControllerTest.cpp" />
+		<Unit filename="test/controller/GameControllerTest.h" />
+		<Unit filename="test/controller/GameFactoryTest.cpp" />
+		<Unit filename="test/controller/GameFactoryTest.h" />
 		<Unit filename="test/data/CellTest.cpp" />
 		<Unit filename="test/data/CellTest.h" />
+		<Unit filename="test/data/FieldTest.cpp" />
+		<Unit filename="test/data/FieldTest.h" />
+		<Unit filename="test/data/GameTest.cpp" />
+		<Unit filename="test/data/GameTest.h" />
+		<Unit filename="test/data/PlayerTest.cpp" />
+		<Unit filename="test/data/PlayerTest.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
