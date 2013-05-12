@@ -67,6 +67,7 @@ namespace view
         Fl::run();
     }
 
+/*
     void GraphicalUI::drawField()
     {
         IField *field = gc->getGame()->
@@ -77,5 +78,6 @@ namespace view
     {
         Fl_Window init = new Fl_Window(300, 300, "Initial settings");
     }
+*/
 
 }

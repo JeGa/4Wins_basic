@@ -38,9 +38,9 @@ int main(int argc, char **argv)
         }
     }
 
-    if (status == 0)
-        guiLoop();
-    else if (status == 1)
+    //if (status == 0)
+        //guiLoop();
+    //else if (status == 1)
         tuiLoop();
 
     return 0;

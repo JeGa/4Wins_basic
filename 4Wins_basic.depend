@@ -13,7 +13,7 @@
 	<iostream>
 	"..\data\Cell.h"
 
-1362313686 source:/home/debian/development/4Wins_basic/src/application/main.cpp
+1368374137 source:/home/debian/development/4Wins_basic/src/application/main.cpp
 	<string>
 	<iostream>
 	"TextUI.h"
@@ -204,15 +204,22 @@
 	"impl/Game.h"
 	"GameFactory.h"
 
-1362312295 source:/home/debian/development/4Wins_basic/src/view/GraphicalUI.cpp
+1368374168 source:/home/debian/development/4Wins_basic/src/view/GraphicalUI.cpp
 	"GraphicalUI.h"
 	<FL/Fl.H>
 	<FL/Fl_Window.H>
 	<FL/Fl_Box.H>
+	<FL/fl_ask.H>
 
-1362312264 /home/debian/development/4Wins_basic/src/view/GraphicalUI.h
+1362508754 /home/debian/development/4Wins_basic/src/view/GraphicalUI.h
+	"IPlayer.h"
+	"GameFactory.h"
+	"IGame.h"
+	"GameControllerStrategy.h"
+	"LoginManager.h"
 	<FL/Fl.H>
 	<FL/Fl_Window.H>
 	<FL/Fl_Button.H>
 	<FL/Fl_Menu_Bar.H>
+	<FL/Fl_Wizard.H>
 
